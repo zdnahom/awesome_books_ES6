@@ -1,5 +1,5 @@
-/* eslint import/no-unresolved: 2 */
-// "import/no-unresolved": "off"
+/* eslint import/no-unresolved*/
+
 
 import Library from './modules/Library.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
