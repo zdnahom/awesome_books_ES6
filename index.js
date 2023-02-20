@@ -16,7 +16,7 @@ const contactSection = document.querySelector(".contact-details");
 const form = document.querySelector("form");
 const { title, author } = form.elements;
 
-function generateBooks(data) {
+const generateBooks=(data) =>{
   data.forEach((item) => {
     const title = item.title[0].toUpperCase() + item.title.slice(1);
     const author = item.author[0].toUpperCase() + item.author.slice(1);
@@ -29,7 +29,7 @@ function generateBooks(data) {
   });
 }
 
-nav.addEventListener("click", function (event) {
+nav.addEventListener("click", (event) =>{
   if (event.target.id === listLink.id) {
     listLink.classList.add("active");
     newBookLink.classList.remove("active");
