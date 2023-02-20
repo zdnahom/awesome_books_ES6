@@ -57,6 +57,10 @@ nav.addEventListener("click", function (event) {
 
 const lib = new Library();
 
+form.addEventListener("submit", (event) => {
+    lib.addBooks(title, author);
+  });
+  
 generateBooks(books);
 if (books.length === 0) {
   booksList.style.display = "none";
