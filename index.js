@@ -1,3 +1,5 @@
+import { Library } from "./modules/Library";
+
 const books = JSON.parse(localStorage.getItem("books")) || [];
 
 const dateP = document.querySelector(".date");
