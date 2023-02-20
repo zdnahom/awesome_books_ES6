@@ -1,6 +1,8 @@
 import { Library } from "./modules/Library.js"
 
 const books = JSON.parse(localStorage.getItem("books")) || [];
+const lib = new Library();
+window.lib=lib
 
 const dateP = document.querySelector(".date");
 const booksList = document.querySelector(".books");
@@ -21,7 +23,7 @@ function generateBooks(data) {
     const book = document.createElement("div");
     book.innerHTML = `
         <p> "${title}" by <strong>${author}</strong></p>
-        <button type="button" onclick="lib.removeBooks(${item.id})">Remove</button>
+        <button type="button" onclick="window.lib.removeBooks(${item.id})">Remove</button>
         `;
     booksList.appendChild(book);
   });
@@ -54,8 +56,6 @@ nav.addEventListener("click", function (event) {
     contactSection.classList.remove("hide");
   }
 });
-
-const lib = new Library();
 
 form.addEventListener("submit", (event) => {
     lib.addBooks(title, author);
