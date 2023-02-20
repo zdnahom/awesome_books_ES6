@@ -1,4 +1,4 @@
-import { Library } from "./modules/Library";
+import { Library } from "./modules/Library.js"
 
 const books = JSON.parse(localStorage.getItem("books")) || [];
 
@@ -60,7 +60,7 @@ const lib = new Library();
 form.addEventListener("submit", (event) => {
     lib.addBooks(title, author);
   });
-  
+
 generateBooks(books);
 if (books.length === 0) {
   booksList.style.display = "none";
