@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .active {
+    color: rgb(152, 152, 248) !important;
+  }
+  
+  .title {
+    font-size: 2.5em !important;
+  }
+  
+  header {
+    padding: 5px 1%;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer div {
+    margin: 10px 1%;
+    padding: 15px;
+    border: 1px solid black;
+  }
+  
+  .navigator {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-top: 5px;
+    border: 1px solid black;
+  }
+  
+  .navigator h3 {
+    margin-left: 2%;
+  }
+  
+  .navigator ul {
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .navigator li {
+    border-right: 1px solid black;
+    padding: 4px 10px;
+  }
+  
+  .navigator a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navigator a:hover {
+    color: rgb(144, 182, 238);
+  }
+  
+  .date {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .container {
+    margin: 30px 1% 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 0;
+  }
+  
+  .container hr {
+    width: 10%;
+  }
+  
+  .books {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    border: 2px solid black;
+  }
+  
+  .books div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .books div:nth-child(odd) {
+    background-color: #d2d2d2;
+  }
+  
+  .books div:nth-child(even) {
+    background-color: white;
+  }
+  
+  form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    row-gap: 20px;
+  }
+  
+  input {
+    padding: 10px;
+  }
+  
+  button {
+    align-self: flex-end;
+    padding: 5px 10px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-details p {
+    margin-top: 30px;
+    font-size: 1.4em;
+  }
+  
+  .contact-details ul {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    row-gap: 10px;
+    margin-top: 20px;
+    font-size: 1.1em;
+  }
+  
