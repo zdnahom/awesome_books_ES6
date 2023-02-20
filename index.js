@@ -1,5 +1,4 @@
-/* eslint import/no-unresolved*/
-
+/* eslint import/no-unresolved:0 */
 
 import Library from './modules/Library.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
