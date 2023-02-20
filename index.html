@@ -8,6 +8,50 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav class="navigator">
+          <h3>Awesome books</h3>
+          <ul>
+            <li><a href="#" id="book-list">List</a> </li>
+            <li><a href="#" id="new-book"> Add new</a></li>
+            <li><a href="#" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <p class="date"></p>
+      </header>
+      <main>
+        <section class="container booklist">
+          <h1 class="title">All awesome books</h1>
+          <div class="books"></div>
+          <hr />
+        </section>
+        <section class="container addbook-section hide">
+          <h2 class="title">Add a new book</h2>
+          <form>
+            <input name="title" type="text" placeholder="Title" required />
+            <input name="author" type="text" placeholder="Author" required />
+            <button type="submit">Add</button>
+          </form>
+        </section>
+        <section class="containe contact-details hide">
+          <h2 class="title">Contact information</h2>
+          <p>
+            Do you have any questions or you just want to say "Hello"?<br />
+            You can reach out to us!
+          </p>
+          <ul>
+            <li>Our email address is Kamrankhan.ahmad2@yahoo.com  and zerihunnahom@gmail.com</li>
+            <li>Our Phone number: +93745009131 , +251915762476</li>
+            <li>Our address: Qalai-zaman-khan 4th street, Kabul, Afghanistan</li>
+            <li>Also you can find us 4th street, Dire Dawa, Ethiopia</li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+          <div>
+              <p>Copyright</p>
+          </div>
+      </footer>
     <script src="index.js"></script>
 </body>
 </html>
