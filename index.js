@@ -1,9 +1,10 @@
 import { Library } from "./modules/Library.js"
-import { DateTime } from "luxon";
+import { DateTime } from "./node_modules/luxon/src/luxon.js";
 
 const books = JSON.parse(localStorage.getItem("books")) || [];
 const lib = new Library();
 window.lib=lib
+const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 
 const dateP = document.querySelector(".date");
 const booksList = document.querySelector(".books");
@@ -62,6 +63,7 @@ form.addEventListener("submit", (event) => {
     lib.addBooks(title, author);
   });
 
+dateP.innerHTML = `${now}`;
 generateBooks(books);
 if (books.length === 0) {
   booksList.style.display = "none";
