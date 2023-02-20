@@ -28,35 +28,34 @@ function generateBooks(data) {
 }
 
 nav.addEventListener("click", function (event) {
+  if (event.target.id === listLink.id) {
+    listLink.classList.add("active");
+    newBookLink.classList.remove("active");
+    contactLink.classList.remove("active");
 
-    if (event.target.id === listLink.id) {
-      listLink.classList.add("active");
-      newBookLink.classList.remove("active");
-      contactLink.classList.remove("active");
-  
-      addBookSection.classList.add("hide");
-      bookListSection.classList.remove("hide");
-      contactSection.classList.add("hide");
-  
-    } else if (event.target.id === newBookLink.id) {
-      newBookLink.classList.add("active");
-      listLink.classList.remove("active");
-      contactLink.classList.remove("active");
-  
-      addBookSection.classList.remove("hide");
-      bookListSection.classList.add("hide");
-      contactSection.classList.add("hide");
-  
-    } else {
-      contactLink.classList.add("active");
-      listLink.classList.remove("active");
-      newBookLink.classList.remove("active");
-  
-      addBookSection.classList.add("hide");
-      bookListSection.classList.add("hide");
-      contactSection.classList.remove("hide");
-    }
-  });
+    addBookSection.classList.add("hide");
+    bookListSection.classList.remove("hide");
+    contactSection.classList.add("hide");
+  } else if (event.target.id === newBookLink.id) {
+    newBookLink.classList.add("active");
+    listLink.classList.remove("active");
+    contactLink.classList.remove("active");
+
+    addBookSection.classList.remove("hide");
+    bookListSection.classList.add("hide");
+    contactSection.classList.add("hide");
+  } else {
+    contactLink.classList.add("active");
+    listLink.classList.remove("active");
+    newBookLink.classList.remove("active");
+
+    addBookSection.classList.add("hide");
+    bookListSection.classList.add("hide");
+    contactSection.classList.remove("hide");
+  }
+});
+
+const lib = new Library();
 
 generateBooks(books);
 if (books.length === 0) {
