@@ -1,6 +1,6 @@
 import {Book} from './Book.js'
 export class Library {
-    books = [];
+    books = JSON.parse(localStorage.getItem("books")) || [];
   
     addBooks(title, author) {
       const idRandom = Math.floor(Math.random() * 100000);
